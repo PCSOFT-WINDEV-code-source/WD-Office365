@@ -1,0 +1,386 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_MSGRAPH_API
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x16fb890215d41387
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAePUKGbcgijFHLOip5XrlGdfU/zoRlji+UQWbva8Wsg1Nuh6KHWyAlGgQYWNJDAijjrfBOWKAsTQd/Yvf0f7k42kPYlqbxg3aLS75sDFFSDQfn9nt1gUYq5dUVnyggGUpoo/bhGfWEIKu73LVRbNTZLAExl3VS60owzDjUMU4OrLz9UUCqt84x7Pm1YeD0HFORMRiPZWxpB5y0
+     code : |1-
+      
+      constant GRAPHAPI 	= "https://graph.microsoft.com/v1.0/"
+      constant OUTLOOKAPI = "https://outlook.office.com/api/v2.0/"
+      
+      constant
+      	msGraphSessionOuverte 			   = 1
+      	msGraphSessionFermée 			   = 2
+      fin
+      
+      // Propriétés
+      // Voir : 
+      // - http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user
+      // - https://msdn.microsoft.com/office/office365/api
+      constant
+      	// Office 365 : Outlook
+      	odataEmail	 	= "EmailAddresses"
+      	odataNom	 	= "DisplayName"
+      	odataImage	 	= "photo/$value"
+      
+      	msgraphEmail	= "mail"
+      	msgraphNom	 	= "name"
+      	msgraphImage	= "photo/$value"
+      fin
+      
+      // Permissions
+      // Pour d'autres permissions, voir : 
+      // - http://graph.microsoft.io/en-us/docs/authorization/permission_scopes
+      // - https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/
+      constant
+      	msGraphOfflineAccess 			= "offline_access"
+      	msGraphUserRead 				= "User.Read"
+      	msGraphUserReadAll 				= "User.Read.All"
+      	msGraphUserReadBasicAll 		= "User.ReadBasic.All"
+      	msGraphUserReadWriteAll 		= "User.ReadWrite.All"
+      	msGraphDirectoryReadAll 		= "Directory.Read.All"
+      	msGraphDirectoryReadWriteAll 	= "Directory.ReadWrite.All"
+      	msGraphDirectoryAccessAsUserAll = "Directory.AccessAsUser.All"
+      	msGraphGroupReadAll 			= "Group.Read.All"
+      	msGraphGroupReadWriteAll 		= "Group.ReadWrite.All"
+      fin
+     type : 720896
+  procedures :
+   -
+     name : O365EtatSession
+     internal_properties : CAAAAAgAAADWf8rmuUgWxfWyVY63pF5nIVyZC+VuNfZWL4kyef6g8dYOPsHGds0BV6C1It/Y0tJ53tB4eYr02fjbjw0eYtRlaO501wMBTWM/KVgaZ/gBYrh6aAGnVenk5q9GKhUj9KdLtdW9VRjSaGCQY8ywr4bZBgmaW0qmvXxfqyqu518C8jILUM16pqXCIUJSUZSAwYOS
+     procedure_id : 1656067930038014855
+     type_code : 15
+     code : |1-
+      // Résumé : Vérifie l'état de la session Microsoft Graph
+      // Syntaxe :
+      //[ <Résultat> = ] O365EtatSession (<clSession> est O365Session)
+      //
+      // Paramètres :
+      //	clSession (O365Session) :Session Microsoft Graph
+      // Valeur de retour :
+      // 	entier : Etat de la session (msGraphSessionOuverte, msGraphSessionFermée, msGraphSessionPermissionIncorrecte)
+      //
+      PROCEDURE O365EtatSession(clSession est une O365Session) : entier
+      
+      	clIFBSession est une IMSGraphSession <- clSession
+      
+      	// Si la session est invalide
+      	si clSession = null _ou_ clIFBSession.m_Session.Valide = Faux ALORS
+      		ErreurDéclenche(500, "Connexion invalide")
+      		renvoyer msGraphSessionFermée
+      	FIN
+      			
+      	// Selon l'état de la session
+      	SELON clIFBSession.m_nEtat
+      		
+      		// Déclenche une erreur si la session est fermée
+      		CAS msgraphSessionFermée
+      			ErreurDéclenche(500, "Impossible de démarrer la session")
+      		AUTRES CAS
+      			// Tout va bien
+      	FIN
+      
+      renvoyer clIFBSession.m_nEtat
+     type : 458752
+   -
+     name : O365FermeSession
+     internal_properties : CAAAAAgAAABNFX5IWmijvjqYaepgriBhPxG9B8tSd0E/F+KfUCudIWUxOZ7U1YvMjsBE9FweWAP4PHCGKQkX3G3tEuE9MfDekzJwr19DHuxM9UD5HJXEGlPPUP2TpfLMCWgCE6UxJqd7K4HLVAOVDJjWvxtP5w9m3TkrWHuGUtBprJC1gzrenhkOzl+Tpqv5PVDqCJrNyz81qY/L0+IXPzit1V7d1fffOv60/Gi4LsdK9vraQhJ2c+ea6SV2UpY81tlX9+c2rMc/SRT9gRWggmdjo6bvygPIb+Mb5cDjg9s1nXhwrKLhBR9+AoZp00MIaaBky0RgKkq++0coYMhd+drHNwtYVN3GRNA=
+     procedure_id : 1656067930038080391
+     type_code : 15
+     code : |1-
+      // Résumé : Ferme la session
+      // Syntaxe :
+      //O365FermeSession (<clSession> est MSGraphSession)
+      //
+      // Paramètres :
+      //	clSession (MSGraphSession) :Session Microsoft Graph
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      PROCEDURE O365FermeSession(clSession est une O365Session)
+      
+      	clIMSGraphSession est une IMSGraphSession <- clSession
+      
+      	// Si la session est invalide
+      	si clSession = null _ou_ clIMSGraphSession.m_Session.Valide = Faux ALORS
+      		ErreurDéclenche(500, "Connexion invalide")
+      		retour
+      	FIN
+      	
+      	// Supprime le fichier de session
+      	sFichierSession est une chaine = fRepDonnéesUtilisateur() + ["\"] + "o365" + clSession.ClientID + ".dat"
+      	fsupprime(sFichierSession, frLectureSeule)
+      
+      	// Détruit les données de la session
+      	clIMSGraphSession.m_Session = allouer un AuthToken
+      	clIMSGraphSession.m_nEtat = msgraphSessionFermée
+      	
+      CAS EXCEPTION:
+      	ErreurDéclenche(500, exceptioninfo(errmessage))
+      	retour
+     type : 458752
+   -
+     name : O365OuvreSession
+     internal_properties : CAAAAAgAAADdpXAst7BYdUY9EjSvPMm3ybvMC6GWotxUSdjVE8FMOLNVIpvH8TbbNtMQ3cYi6Zg8QVVHmNbD3R1wWukemCBXv+27YRAhsjF1rrtnBbBZRqWO86G1czPRIFicpF0IFlR40WSbFPXdOyswErbKYsriVU/HLZ0P/EE0WTlwp0YCi99jSVPBu+Aztn5JZ1Kdvv2E/vqR46IT9+4wYbHhKyiPFIi6R34QqiWgmv+AvjuuUSgP7xYtLNNU
+     procedure_id : 1656067930038145927
+     type_code : 15
+     code : |1-
+      // Résumé : Permet la connexion et l'authentification à Microsoft Graph
+      // Syntaxe :
+      //[ <Résultat> = ] O365OuvreSession (<clSession> est MSGraphSession [, <bRAZ> est booléen])
+      //
+      // Paramètres :
+      //	clSession (MSGraphSession) :Description de la connexion Microsoft Graph
+      //	bRAZ (booléen - valeur par défaut=0) :Vrai si la connexion persistante ne doit pas être chargée si elle existe, Faux sinon (par défaut)
+      // Valeur de retour :
+      // 	booléen : Vrai si la connexion a réussi, Faux sinon
+      //
+      PROCEDURE O365OuvreSession(clSession est une O365Session, local bRAZ est un booléen = faux) : booléen
+      
+      	tabDroits est un tableau de chaines
+      	bufSession est un buffer
+      
+      	// Prise de référence sur la classe de base
+      	clIFBSession est une IMSGraphSession <- clSession
+      	
+      	// Remplissage des informations de l'application
+      	clIFBSession.m_Svc.ClientID 		= clSession.ClientID
+      	clIFBSession.m_Svc.ClientSecret		= clSession.ClientSecret
+      	clIFBSession.m_Svc.Scope			= SansCaractère(TableauVersChaîne(clSession.Permission, rc), rc)
+      		
+      	// Détermine le fichier de sauvegarde de session
+      	sNomSession		est une chaine = ChaîneFormate("o365" + clSession.ClientID, ccMinuscule + ccSansAccent + ccSansPonctuationNiEspace)
+      	sFichierSession est une chaine = fRepDonnéesUtilisateur() + ["\"] + sNomSession + ".dat"
+      	
+      	si fFichierExiste(sFichierSession) alors
+      		si pas bRAZ alors 
+      			quand exception dans
+      		
+      				// Charge la session
+      				bufSession = fchargebuffer(sFichierSession)
+      				Désérialise(clIFBSession.m_Session, bufSession, psdBinaire)		
+      			faire
+      				ErreurDéclenche(500, "")
+      			fin
+      		FIN
+      			
+      		// Si la session est invalide
+      		si ErreurDétectée _OU_ clIFBSession.m_Session..Valide = faux ALORS
+      			
+      			nCookies est un entier = 3	// INTERNET_SUPPRESS_COOKIE_PERSIST
+      			
+      			// RAZ le cache Internet
+      			api("wininet", "InternetSetOptionA", 0, 42, null, 0)		// INTERNET_OPTION_END_BROWSER_SESSION
+      			api("wininet", "InternetSetOptionA", 0, 81, &nCookies, 4)	// INTERNET_OPTION_SUPPRESS_BEHAVIOR
+      			
+      			// Crée la session
+      			clIFBSession.m_Session = allouer un AuthToken()
+      		FIN
+      		
+      		// Session non chargée, non créée
+      		si ErreurDétectée _ou_ clIFBSession.m_Session..Valide = Faux ALORS
+      			fsupprime(sFichierSession)
+      			ErreurDéclenche(200, "Impossible de démarrer la session")
+      			clIFBSession.m_nEtat = msgraphSessionFermée
+      			renvoyer faux
+      		FIN	
+      	fin
+      		
+      	quand exception dans
+      	
+      		// Connexion au service
+      		clIFBSession.m_Session = AuthIdentifie(clIFBSession.m_Svc)
+      		RETOUR = clIFBSession.m_Session.Valide
+      		
+      	faire
+      		fSupprime(sFichierSession)
+      		ErreurDéclenche(500, exceptioninfo)
+      		retour = faux
+      	fin
+      	
+      	// Etat de la session
+      	clIFBSession.m_nEtat = (RETOUR ? msgraphSessionOuverte sinon msgraphSessionFermée)
+      	tabDroits = clSession.Permission		
+      					
+      	// Sauve la session
+      	si retour alors
+      		Sérialise(clIFBSession.m_Session, bufSession, psdBinaire)
+      		fSauveBuffer(sFichierSession, bufSession)
+      	fin
+      	
+      	selon clIFBSession.m_nEtat
+      		cas msgraphSessionFermée
+      			ErreurDéclenche(500, "Impossible de démarrer la session" + rc + erreurinfo(errmessage))
+      		autres cas
+      			// Tout va bien
+      	FIN
+     type : 458752
+   -
+     name : O365RécupèreInformationUtilisateur
+     internal_properties : CAAAAAgAAAADxGcpFazqKOV/5mgqk6pfbP8gkkgqlPhkdmdx1DnarKzZF36XmaN4f/9aeKyCx8CKMh7uy79kTE1JTkelTRxvOuvEM8e4AZHLD76AaZLdr9hRIwi3aDRip3YJ9g/U0T+MGBBOtC8mHo/WW3+mZBze1u+sC8CxbMKyawDHCFVintD4HWJ8Rnsueft87Ud3vqMXb5fBv3VU03+j4GxVCKRhlmM3aL0V1S/oYEf+gApLSPvrelDk
+     procedure_id : 1656067930038211463
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie l'information demandée sur l'utilisateur connecté
+      // Syntaxe :
+      //[ <Résultat> = ] O365RécupèreInformationUtilisateur (<clSession> est O365Session, <sInformation> est chaîne)
+      //
+      // Paramètres :
+      //	clSession (O365Session) :Session Microsoft Graph
+      //	sInformation (chaîne ANSI) :Information demandée (msGraphEmail, msGraphNom, msGraphImage)
+      // Valeur de retour :
+      // 	chaîne ANSI : Information demandée
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      
+      PROCEDURE O365RécupèreInformationUtilisateur(clSession est une O365Session, sInformation est une chaine) : chaine
+      
+      	jsRéponse est un json
+      
+      	// Selon l'information demandée
+      	selon sInformation
+      		
+      		// Adresse email
+      		cas odataEmail, odataNom
+      			
+      			// Lecture du profil
+      			jsRéponse = O365Requête(clSession, OUTLOOKAPI + "me")//, httpget, "$select=" + sInformation)
+      			si ErreurDétectée ALORS
+      				ErreurPropage()
+      				renvoyer ""
+      			FIN
+      		
+      			// Analyse du profil
+      			pour tout jsMembre de jsRéponse..Membre
+      				si jsMembre..Nom ~= sInformation ALORS
+      					renvoyer jsMembre..Valeur
+      				FIN
+      			FIN
+      
+      			renvoyer ""
+      		
+      		// Image de l'utilisateur
+      		cas odataImage
+      			
+      			// Lecture du profil
+      			jsRéponse = O365Requête(clSession, OUTLOOKAPI + "me/" + odataImage)
+      			SI ErreurDétectée = "" ALORS
+      				ErreurPropage()
+      				RENVOYER ""
+      			FIN
+      			
+      			// Analyse du profil
+      			si jsRéponse.error..eXiste alors
+      				ErreurDéclenche(404, jsRéponse.error.message)
+      				RENVOYER ""
+      			FIN
+      			
+      			// Télécharge l'image
+      			si pas HTTPRequête(jsRéponse.picture.data.url) ALORS
+      				ErreurPropage()
+      				RENVOYER ""
+      			FIN
+      			
+      			// Renvoie le buffer
+      			RENVOYER HTTPDonneRésultat(httpRésultat)
+      			
+      		AUTRE CAS
+      			ErreurDéclenche(500, "Information invalide")
+      			renvoyer ""
+      	FIN
+      	
+      CAS EXCEPTION:
+      	ErreurDéclenche(500, exceptioninfo(errmessage))
+      	renvoyer ""
+     type : 458752
+   -
+     name : O365Requête
+     internal_properties : CAAAAAgAAAD33jaxS1nqp4ltbm+Y7LJZNGehXqFkqC9xHx0fncHlMCJvKVYL6gGE1DAw2Zem5e6Dr1XrnoeMF4Jv06h5tQsGTDAmjCPQDrR0rRt+7vKNNFKHErb4iLnKWDUhSiEX8pBqdBXCefMYI2kTbBcyNAWvpt3HYQvP17OCR5GkhzF4+w==
+     procedure_id : 1656067930038276999
+     type_code : 15
+     code : |1-
+      // Résumé : Effectue une requête de communication
+      // Syntaxe :
+      //[ <Résultat> = ] O365Requête (<clSession> est O365Session, <oRequête> est httpRequête)
+      //
+      // Paramètres :
+      //	clSession (O365Session) : Session Microsoft Graph
+      //	oRequête (httpRequête) : Requête à exécuter
+      // Valeur de retour :
+      // 	JSON : Réponse à la requête
+      //
+      PROCEDURE O365Requête(clSession est une O365Session, oRequête est une httprequete) : json
+      
+      	clIFBSession est une IMSGraphSession <- clSession
+      	jsRéponse est un json
+      	Réponse est une httpRéponse
+      
+      	si clSession = null _ou_ clIFBSession.m_Session.Valide = faux ALORS
+      		ErreurDéclenche(500, "Connexion invalide") 
+      		renvoyer jsRéponse
+      	FIN
+      	
+      	// Si le Content-Type n'a pas été renseigné
+      	si oRequête.ContentType = "" ALORS
+      		
+      		// en GET
+      		si oRequête.Méthode = httpget alors
+      			
+      			// Par défaut
+      			oRequête.ContentType = "application/x-www-form-urlencoded; charset=UTF-8"
+      		
+      		// en POST, PUT, ....
+      		sinon
+      			// Office 365 travaille en JSON
+      			oRequête.ContentType = "application/json"
+      		FIN
+      	FIN
+      
+      	quand exception dans
+      		
+      		oRequête.AuthToken = clIFBSession.m_Session
+      	
+      		// Exécute la requête
+      		Réponse = httpenvoie(oRequête)		
+      		jsRéponse = Réponse..Contenu
+      	faire
+      		ErreurDéclenche(500, exceptioninfo(errMessage))
+      		renvoyer jsRéponse
+      	fin
+      	
+      	// Réponse invalide
+      	si Réponse.CodeEtat = 0 _ou_ Réponse.CodeEtat >= 400 ALORS
+      		ErreurDéclenche(max(1, Réponse.CodeEtat), Réponse.DescriptionCodeEtat)
+      		renvoyer jsRéponse
+      	FIN
+      		
+      	// Renvoie la réponse
+      	renvoyer jsRéponse
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1fc66838001e5cb6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

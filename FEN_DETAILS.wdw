@@ -1,0 +1,351 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_DETAILS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_DETAILS
+ identifier : 0x297896d612123570
+ internal_properties : CAAAAAgAAABHhvhWMgpNBGB9h9LSYmBm3v6k7Edx0WDOKRfElMV4tudgJvLrsexdX5GszamdJYxwT0eHbPub1n80+M4fBhkB4eptNsIo+mRT+cn6KHZqd1LEcbD6O9xkz17zhabwXlYIQ9pDu4X2FNDF823+5uXxOEiVpA1+FWV+eZV2O1URg/aP14RV9Qno7knWOvJO9ARbOKjEfF5hQ9jCOLCiUb3119e7GtajXH5eZ+LjjWlw2DuysbyAhNjxaIUnCb3EUpW8xfOiebJ0SCgLaIq/2m3mIuqAFMo3mZuQHZkobwIyOEaTvOr0/jeReMYbJXAZOS7CWN1Tzq3q0BSKQieBoCVvzrq5Zmc0Uw/K+19o78VrLULmZgKGSHtUpgMAf+MjjEGLv+lW+1y9SUq5Mvabg2TZzA+cRKFben9wP+d/BODPMjxcCp69Q2kIzhGH8cysdJBA/dmVpfR+XW0UyFZvJQBLZ1bgOMq3W+xWa+o2zlCy3poz1n7sHbSVmvzoHRA8ggWiCXgeMx9YNPmseSUydh3cOr5mAnc5uGbd1LqieRrb7KT3ed8K9xozc+bBR++DCh7xQq6OPIGzTi0ejlJ4YEXA9Xoor5LPoi+jujS+dAcZ+YpBkgwR+3hLZjmxQ8HdY1Bn6KrZpMLssGUf5z+aNbFVgNDn4+Sxy866EvF2y8OKtwvucM4VAHqzgxu57+fpaKs=
+ properties :
+  width : 459
+  height : 178
+  widthClient : 457
+  heightClient : 146
+ controls :
+  -
+    name : SAI_SOCIETE
+    identifier : 0x297896d612133570
+    internal_properties : CAAAAAgAAAAMOTBEXz90I3X+ssxEnCgUwVgzkWnEEopx0qe0wRPaSmVoJve1FvO8mMkKkSamwtRRiS6bG/PG0wo39IgQyLBj3Hg7Glkq9zr+Cde0OUTh/WvmjWLlRMC7mBVjZu0xjKLecPdBxEZMb+fmFbLct+aMYMmkJ70w9vecVGTw8JAWtnstxFdNxejNwXaW0NAhrL3vXoluegoU+NRRqTKF8ldNkkuoZJNbHSk8EKp5Ol9TrjYyjOKmuakgrPF8xAVYu8o2UAfcrVnWAGU8mtgLwhCTqCbZKkRgn8CfVur3cnGj4zXpzY6TTjoFgwOogDPwQoyVZnS98MVm61cIM60TeN0mLp0ODilBneibqddDBftaFf94pEXkN4hSbmQetOenuBnGpN5PRbJ61Xk+vzS8Q+F8K16nc9uEWvitfeiN6s6tNtebN0xZyVQyJijuIDfjGq8JLoHt4CCbKN64xLI7A/Sg9QQ/15aPI1CDTS7zFWWDx6s6YQTB1SuqvWuoMakuJ2NthiYr0Z0MNGKyXY9q+Ik3GNxabM1ksmyw7KxMfsFYOn+RiAyIYTHk+Cwb/3GssYnEEFUaaA+kQ+7nkx1XZCuM3ni7aAWzwWbQVYArAldMY5HxPvEmgdMjOG8zRKeHHdPhrxh5bJPoybiiKllzPvjYl4Nd6rZzbSsp6pOVlbMG6g5UW6rlKBvcICxJD7nUwZLMfJtB5FIqmEH0QoG3fn7eq46KNcrQ5TSS8Nn0RxEiuuP9+PYu65lud1MUy5NYMOlhrsXQrmab2KG/5Sn8qhO5QcVuV94qhn3f+9nBDbQEVvoNLl7Av1Qz4HLiVbieDqYo+F119F9E3hl4iYItEhbh5yeiVEhHFLP8JLaQXDS41KO25ICqFr3AjKtVxa1JIpIaMD5fWSoInrVEJPi8L+GLRNyUGJkUCFA6sGb+nlUyrjqnPOfVkWzZ5oAheUTlTiCNNd0qGV+T4KM6QFh7IDjmrNbIYbq+B+H9GtSqXfIT0QFpSPg2Pr1NSDdHBVoM7DdZnnOh6KlYjg3AyI7yScW2074pG1bHqR3F2QiC9/c3QF3hcT45FtC0Fxb1OU3YVnlMh/2lIXa6QzATgUKTXctGF3qPSC8h6QA5yNzsbQJg6EcwRxaLvmd72IH0xi+Ebe5BqqhFb9x7kERpKy2D9jBxp/Fcn/smF6u0sMtgOYLC3BTpO8jtzipmDv0F
+    properties :
+     x : 6
+     y : 6
+     width : 359
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_CIVILITE
+    identifier : 0x297896d612143570
+    internal_properties : CAAAAAgAAAAO4TJYTjni8sSgZXU9NFw3g9mb5Bzm4/+9ZNBp8q1TdhrM3S3ni9SisIdIvpdnYV+EkbEPkaH5VOoNjn7ghFv5xBtUT+vtcMrUHDslOPqdXAryF2kVTAYphPgA3qevP332PHTEU1MFrH5UQe/lGFgCZ6qu+oCGThlTcSqfc4n7UsGYhBRe2LXxP41lCcen22+9rNJz+8SAZpzsJY6NIEISxVj+LbLtgV4rYc2i9qts6f6pES40dfYA8sTaH7K6dXFKDNigJXysNpVa9h/5heQMK/hKlUSqV7KV5izRIG9cEAXirwPNh1rIhW+YO1S7JHmi5hENLd/lUmwCAo1XZG65ptp2RrhXj1EVQdHixhWJLjyVW0lqZJk20Gb1UHi0nzdmleOMUAouIjODcy79yuW/0YDqz90dhDiOjJMsGPUS0dDa6nB+WCSCZqxKmJCcAIAG2OtKl4KZP+vWXeq/+gbIl5dVNMS468JWe7oUF7TcRYPN6xrd8zpYbGBVfC+oK0vJkntfdYG8GCKukBZWs40uqkyJRxi5p/XIJsVDnrHj0o21qlu/hU5MIAxuJrxxnG9euG5IooShykfdmK/TlmBVNDfN3RYelDepo/F0b6dph3+HG1UgnXrgffUY7WypgHvDMQEzFDf55G/wS2J45vmyj7PQgL5t5A5EEsjoNMeTbFI4wBJrDoSdibCcYD4+eO76blAVluRfh8hI9YCK3CFUfwKloYAwsCs9UPit/GH1FjEhI9aUb4TjED+htFi0/32fnoJoWASwAwzFvO5VLirlu20f9fa8l6bMfZyU1KrHzL4LVYxEJyu2D9rXdm2sI8IKhEKlYqkjhRCOMilotFvDHy0BfNrjK5YDBhlF9ZwTvu9EocjkJDYhlfvixtIXDWASYhsH1xyri2Z6be+HZ/RlZMADnMfETacdSLt1Kb/XFPaj/bk9fef+E4akCtmdo/BTK7JmR5VaXXx4izl4RNf8oIb1vRTqsFTgNi2FNPL8IVNnIeq+PBZ0g2PUzEUQtevDwLwTvAs1eWiaQVmR2y7aYayoD9BJqnTke8nJwhW8XL9Bg6gRqPaWnbEvHYinqWDBwcJnj6bBy35tdGs/LHLgY0y6mfL7W/w/nE0OHeWwkExGBa4Rrx2vJGNtxh8gzayybfghkCJv1gqErjTgMem3tr5kb9ZiAfr7Ub0G8+fijacYp7BoKxqLtlzZ/4MJdw==
+    properties :
+     x : 6
+     y : 34
+     width : 220
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_PRENOM
+    identifier : 0x297896d612153570
+    internal_properties : CAAAAAgAAACQrbToQ4cUo+UeQhTypAQ0e8NnEPjHourR0qy3JihHMVITDfCKa9aTkLSh4I0T96E02vuhjGWP2nx1IsWTewtB/T6mwYxMre7DVeoTves5UvmInjuhfWFxiSxAIho85mgfgsJ6oS/CLR1cQGHO65G2PyivUolcME+gYuiU+rgmJEtzJvs9Xc7hKwqo9qjTarWVWrF48EgM9rqBc6SZDK116L+Aan3lIQMGjOADFiU1GnhS3Ehkt6kmrsWKwiUSnT70bN/mb3P6VteAeEKfkPIHspb9QH5amyJtpkQBhotF31vF1XSd2O4/WcuemtcW8NxT0vyfdnsWDe3QuU8vxqOmFEFCLP/PnY61rUXp/Q38+VEI7Fva1WjcPOQg2m9JNqHcGE7JG6CC/+dWye6AeZu4XU6HOe3exlYHSe5HdoCPwkkLo9bLozDsdPisKhNZ8I/TNhkTynrPMojcLpQ3uYpws3B3MTQFcxrJNYi1ibulo/FeRSZ/ayM0T3ciH5FUed9XbtrxG5cIRuA6b+F+7kMz9jh2tht62ro6aD5uOhe+YpGJkL7ik4VqBlQx9WFqMw0iVJXUXp2ciXxnvRdrgimM7ORbYt+smMFfiEVAHyh9ooZE4/ov3hbmj9rA0bS4Yha6emWqNUiD2POlX6YAtwFHHALWR1M8NOrAOZzmpoAzFd8bjMcaUWKjE1NCsApx4oFtHxAyTS/9a7Sn19bMTyfleLFfBrNdaDdBE44ZPApzuajs4bsrlCB1LpqNvAzddUw25Y6l2wcqcwwuVrrd13QIOpy//Dt7xbwGAqKapgGp+RO8f0sdOOtKM/FLzjETm5HdIwqOrdSvTfiHmquWv+u0IGZ7AZUg+x7zg8cZ1dHlJ/gtDXWnF7w3b8oO7hbOZwXfX48sjsO/VRw/EZWReB6mBTtVpQ693ydtN8e/zzrXYV9iUXAWxpcIKU9q0h0y+7PWXI7vXpDiK449HeV4MXFdzd0p7m/3bsBMDeHnYss4pCKAccVztwSUg+4gTmMR4Zo2Bfxi4RLPCbgLkfsXNtYl1GGi9E9YMGPm/7/PDzM5IWHtAaIFjXZlAzqeNqi2C4QQ1/G2UoXE03rMn0oaeHHYf+E+WO7ftUihBwHu8ybEjF7mjIkOXIGkGbpNbRa9ctEMfQb5uyrtAOTZk+d1EjR1q/VQU19V2VhTJLl2F3h2gKAFN9TZ2r76knGJ
+    properties :
+     x : 6
+     y : 62
+     width : 359
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_NOM
+    identifier : 0x297896d612163570
+    internal_properties : CAAAAAgAAABX6hA3zWRHW/TF0vUahbjbjYeyMfUVWwkE7aQ4SRtJtinq3TuSYAAv2Hl62VpFzbNd22c1dMYjd4ReKTsW+hh06pAU5brFTFdIe6zADuTVrTAvny+70mvsWEs1tvcXpxMoZv9YMbhrc+j8DfpX8f5dANlYld8ngtCsv6zeClPxICMGCi3pEY4qnBocEZ6J+OWfVNfyZkAmsL7bKzM/yHJD72ggWd0xlCCeEQkO/ZPIjfGdil5uHkQjRZeOysJnUvLdVpKeQ+dfU/el7fantiVoDamxnR8HuFUFOrZK6oApm8JU0i4gsrPRTl9u6z8DJvjySV1ngi9ukhEgvW2spleBy+njUEwfhpOX+420TCEoDyc7eP5R+/cTZA1JEKUYNSf0W/gseFuPQmWOcOlQE3BrQGV9+H9wg+RCqcumQX+jrygz+oTIGEa66+lRR6fIAWXP3U71UkrOfkEJyRHK+cTKQh9y0RKdG6zcVAzfUjMSpxj/dzP+5cvuRd8e9236fVbOT1crQlKNC7HvageFBzBaJqQWprF2lZXh62N3m3FT9RI3U700uHu5H1M7U+xQUg6QZxQHAHtO5w40VEUgpez5IpxLzk7WnHasvNBv2PIIGjZpqCbk8phvzrxF7uwHxBxgXLGEEZ7ke6G0STJUWZs0lk5To+u1nGWAgusqU7OQn4V6l0Av7AXtv1p9uSjiK09Tztn6fx55C3AnMGJ72p3mJXCaUS3R4df0T1eOicAGIpV/GZ2W7mfG7BTnfxzzWnxyO1xeKlHRf90wKcMC/ue4ThV8FkCTxb3uPPQLHrfzFrWKRvxyEm4x614wMe2t5q6wb/vzRg6273pOitGXWV91W4JVG6SUs6M5QExF1u6cb1+A6Tj12CjDeQIJzJF2fMBGWhoFoHRaRrwL6v2kYrCLxtQvjPWq6MDIzAgpwByXeK8aMXKy2eytZkk2FjqZrJiFGfRETOMKD+3L4ocWV+ApUiNsfQcOopRnK/66cIOuckwiZOC7TssZU4O5KmQPWRMLjuFOetVDllzAE8Gttb6afbpBxU3EQjqQbIOauQpQP+catPa+9ROofZ+p/GNWMzp0zKelnvFDePmJ7ZgKnTORKfXcck1OyjPMyDloRsEyPCnsYrA7kxAX0imzkv/yLl6CvWdy/28Ltp2gM8JrvIbjImRjrNpwzhwZcoZ+MNp3XCArutZu
+    properties :
+     x : 6
+     y : 90
+     width : 359
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_VILLE
+    identifier : 0x297896d612173570
+    internal_properties : CAAAAAgAAAAZO/99G1eVI5nYFR3/tQ1socoo8yhm9ZqO0quiB552xDrsSqN58J7O3Oqxp/kaNT/cYqkDYt7faWMa9rDGYyZEjZh0ET5gXKMjGjslOZPHj5UQpmQ1LSr4w50+hDm1ysY1ymaj4LT5etNV2v+WzSld+8FoHhhYMR2ouOh1Ub/kCpxew7Uq8dK8lU+5xEaU0D7QZKNk46RcWFjpWgpPMm/dJUZ8F4BPRoZObk2f6LAyykObtKh++fhL7UjTTlRnADKNvvT22tPniIX46Rop7TuCKX4RrTmhXMnThGuigIn/v6e8XwuoN2YeIM2MWa3wxDgGS7ZOOgcstRcQB02qo1X3KlnuCdOoXZ0B5DyrmsnC5HGKoJ7puZJeACD9x8vcaq5JQq5ckpiqbDEEmlv701Yv7OY+ywo6bcgSTM7NzeZdFKwhMKEqt/awvjJVXRxWl8k/iUmdI1o2LWbxX4+heMyNPAjb6r/Y4XBPzSRhn7j7uctjUz+QROTki/liACK0QjUfLwAdv+5Gcl/JTKpBiOARxG9YBlrPlTte+N15C5QoUz1jTPTQazoShhPM8GPqvy639Z9ifr291tQ9aymcTavN0G79sPe5rhThOy3eLcCNcIdNRTjl47+pURHIIRTqwPJXX4P0PyEUgx1U6+CqrbtLZ9do2cXTN326lEZwCHRfj5b4LLfqsluUw8iYkJqFJgdm1CIQKxRKxpq4Ue7kES1xy+inboOYE9IDNjrtqOqjr7udM9VFM0cE6mNpYrrFpdrpdrb1g3416lSJlPYh34xiy0sBEmmWaFk+sZTgTL0dQ4Z1a6N1cbCpQzZvlA9hXT2ochTkW4UMuDxSUks23xsW4yfn18u1+IdN7GuBvQmFTe9a2+s9qK0WDRuO4GBKo//uaMUQkqZeeqqEW+dzrDIA8AzzbTYg5jYb2D9je7br77CbWSpQbZZ7YTzezKdKY/3jg/Z1zJONYszwf7GsoSmH/g6hdO2MNwHoSOvF4IFChBOZxxfVut95a+9MzMH3ux5JqLjIj3NwthjGAfk1UKRVWYaWhPfFVTduRzmzEIDE+5aghmDCaoWL0YiodCxPnQfYY/kGRNhKCj3pb3iKOkjOKSOAcWUVR8h0k6lygXpozE6W+bsRlVVeLLYyC2eAsqVq7uD9qy45pmgGnc184hQSbNnRv3fcYcGo6bVIDeLSc3U9y+PO28Hd5eWXSTo5/yz9
+    properties :
+     x : 6
+     y : 118
+     width : 359
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x297896d612183570
+    internal_properties : CAAAAAgAAABNVvoBuyJvg6vzctTko3rEgbkRMXx62/E28ZJYik1V0BhUJHOr8ZEfCqdgtMa/oVQ9psnucgFQCanFWHu7blZF+lEI9Zl3LbNUyBBMv/SW0yT8eAT3HU/IK8t3cZ+kQJZTbesUHUwAUBkquyfTuYoj68qCv0VYtwNCusMRHIQ/uskZ/bzLflu59XGA1rKGNEbNOFI6Y4DdEcREYLlhl7VbuAUD6utR1sbMcg7Ty+qjqA3D7DKE7Hn7biD5OJ4IJkT78P3OlPc9SeM5mGazkFVF45CLD/yhAwzCAl97rE+nkodZHN4D895hl5gpRKU7OlmActMPFgu0VwYdJOjknjJTz3ulHhAU8l49hLPVZAmoTn83bZ27ltzDQG4CcDiBDKctcomQAPP+x7g2PcI1aFtCZee+PEVzwpBEoDjNNXGn+h4YpEWtRg8pVScRBxgIRcaG4u+ZiVmsfGO5SttSbhpGeb8GNSVkF+sIrs4uNgXgH/wt9pI6iwzjFwFJ77yVEyYDxA2fcoPwyP7c9s7Hft6uDQhrPlMBQUqZb3e3SCG7VQNT5P4eo1bfg638xx0ViwfJTWlHquNdyZ8AFGcJD5UlDoYaONVaiJgDjZOj/AuGk5mfCY4z+8BA63kaou3Y9zwhG6dEov5u6qmBt2kPKM9x9p/icrCQMh/RP4lKca2v0jrIqQsjULDCg2i0EFM4FQkqhMICuxfSiY8r58SRL5FVae2iJwtsmTwIxZtSTBzsQouK/HmZf4rfAfxFjqfWG+g5MAxooJRpllWufh5MlNNDJeHQ3UfU8s3VCU3UCYyZucxyEqUzvkS0BLydbBZsQ85jtvhTxAIICQEgYt7QuGvRh40+bAzkDmmz4XvY8CIrKWqF82oqYd1NzhLCCnL+cJNK3MvpKKTt2YGkwXF/6b6Au+ElX/10HNVbD+rqGzwGaVra
+    properties :
+     x : 371
+     y : 6
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // Recopie les données à l'écran
+         ecranverssource
+         gstContact.Société = SAI_SOCIETE
+         
+         // Sérialise les données du contact en JSON
+         jsContact est un json = VariantVersJSON(gstContact)
+         
+         // Nouveau contact ?
+         si gsIDContact = "" alors
+         	
+         	oRequête est une httpRequête
+         
+         	// Prépare la requête d'ajout
+         	oRequête.URL = OUTLOOKAPI + "me/contacts"
+         	oRequête.Méthode = httpPost
+         	oRequête.Contenu = jsContact..FormatJSON
+         	
+         	// Ajoute le contact
+         	jsRéponse est un json = O365Requête(MaSession, oRequête)
+         	
+         	SI ErreurDétectée = faux ALORS
+         	
+         		si jsRéponse.Error..existe ALORS
+         			// On affiche l'erreur
+         			Erreur(jsRéponse.Error.Message)
+         		sinon
+         			
+         			// On ferme
+         			ToastAffiche("Contact ajouté")
+         			Ferme
+         		FIN
+         	
+         	SINON
+         		
+         		// Erreur réseau
+         		Erreur("Aucune donnée reçue")
+         	FIN
+         
+         // Modification du contact
+         sinon
+         	
+         	oRequête est une httpRequête
+         	
+         	// Prépare la requête de modification
+         	oRequête.URL = OUTLOOKAPI + "me/contacts/"+gsIDContact
+         	oRequête.Méthode = httpPatch
+         	oRequête.Contenu = jsContact..FormatJSON
+         	
+         	// Modifie le contact
+         	jsRéponse est un json = O365Requête(MaSession, oRequête)
+         	
+         	SI ErreurDétectée = Faux ALORS
+         		
+         		SI jsRéponse.Error..Existe ALORS
+         			// On affiche l'erreur
+         			Erreur(jsRéponse.Error.Message)
+         		SINON
+         			
+         			// On ferme
+         			ToastAffiche("Contact modifié")
+         			Ferme
+         		FIN
+         		
+         	SINON
+         		
+         		// Erreur réseau
+         		Erreur("Aucune donnée reçue")
+         	FIN
+         fin
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ANNULER
+    identifier : 0x297896d612193570
+    internal_properties : CAAAAAgAAAB++yliIwNkVvAhdamU+i8D0tVNlJIweAbPfKR1G22fZS3EQ75snjHE5WP0nMB/LnyFYPtoqaenhmiZyyksWfkoQ9pI0iqxD0gikIpnkiwqaEXc3dikpd0wOoqQ20mAQ7Wf10LZAp9RGb6gAYY/hZ+2ciq7J+Kfaoo1OZcJZQAE7PwqpnoZfpdgMIVu/2J5Th4Eyowi/gyKfyIO2CcRs9joEqK8hOCb2qSiI2YDQ0SrsgAyl0Br7FyJ1t0MF+RJfM1RPoMXFCc2AHDji4Ycsfdo63epPnpTheduJXN25e+P1jVfHn9XFteOMQUlYLq27058d/LcCLuJCjA9zKP7zZkJ3XI4FgahT+oyJ3WzxSqivVUWkPiz1nWyjSWdch/Sy8n+Jja4aWNWyY2fPafHuaMNWWzMmTvYGA+dZfWtiXSUZU2TrqvOu4M63r9GdW2A2etQ3EScjTx5BC+prIOOlM0iJX5yfiz0VNJXkfi/QwjyoQzIm7TwxI0ChPBQPtokx3DxpZBD8zq+cVMvxA1lTlcerrMr7TFSJ0NJvrrzSj3q6BiecneS7gQggqyI2aVFpBbzUAfMpAhbw+XbzdPOupwFForpB4BcFGDdVCB/RrG/3PvyCYg0Ue1jIwRoWA11aFNRMK61Omu0Vpou9Z8eYhmysBG4Gazzto1HSO/jYoyeRk2odcm/caUR0Pk4ASoyVa4xE859xtX5tcXytYWhD+zr3/AllBDkrNRcJNdEdfENG9cd0kve1R0bB1uoVZPi8vlFIpJelzUHajA50aB0df5SbwpiJsUfXJnK7CrqgZeT3qa3U9ckAHQhjkw42kUiuCiJxZF6JSOpJ+F2vZitbWXWgSM6jWBPX6maKEf2a2QZzsuvEDNiCHDMCz35/4433v5XkWjj0ww9iiIVNqz4DBQjLrqxZbqfo/0+67bPoIRXHlu21O4J76mctg==
+    properties :
+     x : 371
+     y : 36
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         mafenetre..valeurrenvoyee = faux
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABDCoJMx6Xu/ckiI23Wnv6ritziUIU7skXnFAo4hDvnp9QBJXVqGTcLbNuseWvGjQ6DD9VrvscsN0JPU4gZdWvmnID2/NMAHqRE/cuuXoI9xGIfSrJsYG6BzE2MpLje8dsEOB9jDaicu3WPu/BN0AJe1YQYiBJP3LSFBt6Xs+XMTw==
+     code : |1+
+      procedure FEN_DETAILS(local gsIDContact = "")
+      
+      STAdresse est une Structure
+      	Rue est une chaîne 		<Sérialise = "Street">
+      	Ville est une chaîne 	<Sérialise = "City">
+      FIN
+      
+      STContact est une Structure
+      	Société est une chaîne 	 		<Sérialise = "CompanyName">
+      	Civilité est une chaîne 		<Sérialise = "Title">
+      	Prénom est une chaîne	 		<Sérialise = "GivenName">
+      	Nom est une chaîne 				<Sérialise = "Surname">
+      	AdressePro est un STAdresse 	<Sérialise = "BusinessAddress">
+      FIN
+      
+      gstContact est un STContact
+      
+      MaFenêtre..ValeurRenvoyée = Vrai
+      
+      local
+      	
+      // Si on a fourni un ID de contact
+      Si gsIDContact<>"" alors
+      	
+      	oRequête est une httpRequête
+      
+      	// Prépare la requête pour lire les données du contact
+      	oRequête.URL = OUTLOOKAPI + "me/contacts/"+gsIDContact
+      	oRequête.Méthode = httpget	
+      	
+      	// Lecture du contact
+      	jsRéponse est un json = O365Requête(MaSession, oRequête)
+      	SI ErreurDétectée = faux ALORS
+      		
+      		// Le serveur a renvoyé une erreur
+      		SI jsRéponse.Error..Existe ALORS
+      			// On affiche l'erreur
+      			Erreur(jsRéponse.Error.Message)
+      		sinon
+      			
+      			// Désérialise
+      			deserialise(gstContact, jsRéponse..FormatJSON, psdjson)
+      	
+      			// Renseigne les champs
+      			sourceversecran
+      		FIN
+      	SINON
+      		
+      		// Erreur réseau
+      		Erreur("Aucune donnée reçue")
+      	FIN
+      FIN
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1fc6683900255cc6
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,105 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Office365
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAAByss7pKkVSG02fRZZYyWWgONXIfQ820kEROksLKbIw4346Wv+C6EXC7f7A7TZYCqyiaZ649wV7y+FmItoblzpOTU5RdLWYKEMOiAzhKlF0pNpZRSnZySj60UXE37uyiOuGtOn2dPS5tFFmWlGhDo4+ZohHl8eyKwwG9QwnXqDWMjJQT32tiKRiYmNq9HmzpAZJbzvyGiVvkR3zawGSBqxJAo4Es9qFC0wL6hsNKgp+aJppDvhHjgkwfz0jzI7M09klkFKslZXNxn1RmITWW9EBHXAWDUfD7Q19QeetHyvgr0iZ61E0Ax0ZHeYgGjhXJXsLo6T2eAD4SsmXnnQgKkVLY1gh6sc2VgevumVorVxqXX5LAPwKbhLAAdb03bx8x+bp7BUduIDV3t48tk4Rcqcc6xUCiCBS3bnIkTfk/UEpL71+0aUh+j7NzootkjPFuCXv/cYBRH/3Myvq9N7iSryfs+OVGPnoB4Y7+rGBOmlKOYMzDNCjK4ap2LXq4IAsNR7N/oF922yIVcPIwKCxwn8PDcBvT7ZNsv5foyOkOP9T/5IEuaevCh3g/Bnt73mG2idCj9yXrutAmWfI2fBhk1mq5mqyHefGm5v8nlsiD5H3BL79T/hvM5bOmNwW4+rXTUR6/RhHL0is4hbEfSK8tPHqUMCdTH0Il/6i+ZKkLZTsuYydhbciZZWCy6Qy/pp4luzjX/S3JDiLEVsQw24+2nUL8SC4NfoqZtcyHWrQlqLXj/Tx9zBAYz7UarO4HMif1hi62QOLXlLOB2Xjg7PbZSYHKhj3Z36dY2TN+jxtFBi60kfh7whOw3kmBiXIvFMTp40SM0F//9UxCsZlo9MHclXJS6GrQoVoQznmcT7gazOfIgTVO2EIezjv3S5CQ/FDQiR/QMhPg2pxvhrBwCg/CfgrMYTBXPRvQXpvC7JQzWdwvRyezJNY7LuMBG4bln5ZStY7F1ki2ugMqvytezKsxtw66Bf0z1v/PwdyOprMy5MlVcbepzebIu2Uov11M5gKjjDzBU/bjHsRvR9BzH6IYAUL4XHucS596bMllFvMbAUp5kXZ0jSFlkI0nwq4GtDqTYU+Rv6G1vXZoi4CuQ4LyVe8tAKpfwZGwwVlPjPAjPQJ9UYUn377B72Hulp9kCH8k7/D40Q4+toAc7OYVvKt+CawuJz1RqzUSujifcr5OBmLnAOeDjE+TdEYRJzjEU5tO0CSaJt1B9BmdzESkKIUTJkz4eqQ469DfTuiYNyYn58RSskrow0wPBk/s9vsIUf9h5CS7BV9w8Wbs00PHobUhwmWW1zFsUXEkX/BOUgTog0NOUqXvzLgg3CcFF2zz7Ed70bvk1KxMo+jdB6I5AI3mvCrmSUZHGK+xCAhgjxSYkSHtx0lA973TZlh/66UM+QgOoiCm2dAQt4XwsZ5s8mtmIAMxVMg7GHnBTujYQmIkc2JuBTbL9RDe/WnJgSnb8RUaJP3eRUgAuHvk7VU8oBfAM2nnmEs7DYkzneRHyHBcle5P3a91yFmPjTxVpHsUUtVx7ICdpqrIuaNcPyOutrUW4y8R9WHehFlu5x8beDmznQ9IgcTrnxvGcFGOBya1eFiTo/ag5Tm+4sm+sFKLTO7Y0EhfIwlS7GIwcYBbwSMICBG40SF5rWBqr47sx3PVgUkRsTVqoY1Gi6/8nMVm5btsDrGlW9VZ/YcVxd/rzEi/Zyo4A4eg/l1Ym9Ic9tF/WELoy7NLbYqWdi8gOxcNK3uYRmdbZ606ohQIziFn01peDBwy7lN+6w8VIDs7rdGVxnhTsQFGvp3PInLXOwLP00g+WjrrpIOnUupRCbjT5nlG9W2uJDi1AwBb7V01IhkAKbPyypCWRQ0wg5U7zZEurETB2UfNkq4xITHciOG4kxM3KTC2/QowOn3UgcbFTc0/asXYCzauEo9vehmhER2D85I0Fx5Q9c=
+ configurations :
+  -
+    name : Exécutable Windows 32 bits
+    internal_properties : CAAAAAgAAACvFRZ7YVgk+PmAMNgPHzZlXJHkxcQbgp3pufi2nB5PQWMiznqinkXOstxf64ORZ3w7LJ9rSZ5Mcx9Uov9+WoyK6feBLvOVPVp6kq2qPfXsJRXBFADt258FuulZFVgtjAXdetRM95ysa/crUz5Gy+7RMDUmwxBa6bhUu/DbnM2Y5pMy5geHY/q9ZL78+PiietAJYgL8A1BkQw8cky+lkLA2HXQz2xrpl73P5GUoVsnm2PDDEsQf+q9Op5HCjdiwLynuynJjqcTuNp/hbuPpSMXVxFzGvejDKuAb2g0XflLPbVRMZ8ib+XxjwB27ksqIA2ztRERwPGb4RdxGDnmGGE/uYpSXI9bRAsxf1xfG4vu0XXhCWltFvBG0BrdxUPhlQtGCf1Tfx18FjBziHWXzByDvbTmPNsdWutPh+Gi48RB0zv5hh1HOLNe2HSMBDfOWgWd5/zGLmClcKm0dueUM7x68rMEqLL+sobJm0FiyQIADZcXqh6Ecn+K1e+1MYijSTu0NLXi42pVoUVYMwAnJKy/sBtGBh580Kmd6qa+I/FFDAgMdXM3nbLTe/AVwHdQMiiZzvcuv/RZWVxJaf+RDEf6F7sFlgJg8InmZaCz0PnVGOzHoSjUDhcGYKkfiAQBy2WdgaRSIAIJP57OR4TixXjc5g/1j369ZqugoBGLOov5zDTdYV5W4iSQGv11xT33CCOSCSGQ/pfkPUiDA52eZaZdB7m1Klj1Ox7HzV0HNYNy4hTmcAk3RvRzGLSnTP5OOoIWzQ2vUUyixq+hH4Gchl+bg3IdEGl4OQQCdSH3RvH3CkddjWzuVRBN55OCGCrqj1FkiQT/0R7WMiteuchpMMHrG107rHF+EWZ9MIvnZsE2+BFCSwrfIEph20hrnKWMx0OVLJeh0so2aDNQcI2Wxw7fCgTlH2Hx1iZOSo/Zws77vdmTtbb3qwqVMnkV55EjGkDOqQJAUwx3rg4LCJogItpHsVA3lbnQT8qY8L0+vVplPEl/rpPzczdAeVJdRBrlOA2bHNZvdR7Afth7DZ7Qg+sBcTLyTj1ezVN/q4BZYy0TMpfq+t7f68rc1fB1HIF1b35GvK5h59yvo1tPXSye8ayzipOiv7nkJhh05DawIjhzCTggisYYweTFDL9490GLgCQwVqein9T9W7c2/JHnS0180fQNLCwVGoYa4kUZqT7kj3Sccu7UhUlDv15JbR6OhlRFHzSJDb5gi0Qk9f+ZIPRL447WnXE595Q3JZ9P/6+0ZJJzAlfs+Tk1ifzc4ktDNBs3y6ydLB1ZkxpAJvuKUZyORN2md3WoWbwGTMVkNbSrAhnpq+1G+MiY/ROyKeExh6ZojgAEWzcJXQyvIdVrlGQ2UC6Txd35oX5aRQK4xFDAtQabthZyoqNXNGRrs0Wx5Wcsh8jGS2xIjVPX6hlouwQ4JROn6cjIMx1YviL1lTWw2A1pWTPcKvCZPp8MyNidP4rIbLkuN2g/LTfV7IJXeX2RjJlxBThSI3UTWCmn1qyt/ufrPGSQYT6E9wjuNegZsZINjYSFjC8/dAYD+iYN1h6hWZA91eJcZTbfEqrnTIf4p1xw3TvEAtCPZV3taR05VNbmy3d92AJCmnLckv/JV/+98J5EEIV7J8Mr9JMLM+pd+OogFzbdgc0EvZLysKSTK7x1v/gSDHnLXTh5DZ7vIe6tv473Bp+Rgc4v5TEfLlwohqWHkdZc1T7/ChLaNMzH3EH9U8LuI9vfegXXNbpgXaUaIg76KxCNye+QWDTqfCfhLNs/InH4NkVZBp4U0XsPWhmX/4AE4h1TRgFYoAh46SY3d4raj/GMdrxyvwrrAwZD98n/GfCEJL2ekUrFQwXpwwio0o+UMd59xprl0Ym/eZboVDysDYmqfU9G+zUrQwyP8U2qtHyEQlj8/YlvoFGLhqUL1h2N7Y5PI1LuSyw2Y3cHBtHQmj19T9Fj2JZT/7/WlDz4ZqZR7qYCYoJlLwYYouWcIIil1SPEL22oGM50woaoQcl3ZMrxhRUnYE7caixvGg5yfN/JqjCA2F6NtrEjfUcJ9CubxHhn1iCf4yknoPSzjZHH/4jNuIO4fuX1OhYy9VshQGOiZejPC2PKM5jsWgGBmgiCU17BwFcxXzTSaMt0KZL+9YhO9/YWeA0FMNVbnUZpLL25E97Dgymy/wqW6Ccb0ZEpNoI+PjYQ83MVBBAe6F9RuKyK7VcrfgCog0oeEgidsXUmKM89E0+yTEGOOr98L7UVCbbHA2rsYeiFd+UJX8L7aXvlOTsXKTG+xpF0rLf9k/sipCKZMc22aXRzljF+b+ce6Wh52XNQFgTbv7+TlMUyWlKU0mcrkOszWBYQ9OwNL343krbPkP6S2535FhfSeuPE0HqENpSEHmXOhhd6WYpFImEWGLw8RlZLXzjacz+uUUoY59+pWdXadSglbpuPgBjLK8sFL8DbGrMe6QdLIzzwjNyCnB1SPqu3maZZLcFp4Rum0chjiqDVbzMUlECrqMAgvK5buZK2PRO5p0qyqctfT4QiZYT0o+RXuLfL/MPuFIfwFqSkxfim5tDYn2Np03/HLgLs6kD19pen6/ymE5DWrE1byFmXAQvkywH8FIkuRSQI3dWd/OVyY0PDAnRvnJEf7vrVITzebrpN0XmJvf6u2dH8s2b/OHc9siTZyd74LVdHs+/FEfLNv4fGIFQwvzMPgq4bvTwyHMVnM1dKAGkaCa3YoAREW1RvUzzMiDUN+DkoXKCRZM6ljX5pz49RLGLWy/1IyLYTcfXD3r7NA6zYgyzV7HtxMKAD3ozSVVLDisolWI1kBq6l8w2OmkE/d+eW8b2qBxLP1Jrm/9vo1XPFVWmsfwzi7AJRYMci2735ZEGQD0rNIOHTpsxAzHGFN/X0m8fzApjli87yTjoRNVvSOyQpdu55AO2NwR8Asq8CtnG2kieVkRa7H76qZmnltznJTPvCSxDCav7Y9vOe63yTkoilFZ2lMvBLQoeCfl6ofn1JB704wB9I0iQD29JPPIy5tFllCSAMXaQT+LWdhje3xyw/sQKUflQl546pkSV/HROrRs8IWCRMsR5YF+Qw98JeS7Y6kGrJ/j4Gr6SKjQQb8/x8CvDjcFgucYR4gj7ehH3Xoq5XPWeou9S2TOK1byF4FiNPTK3Zbl7FGG8Zgqgob7tDNt49nM1WXRuydvBsoMmqbyghfBjH/HN/gDQ4Se01YK/Ta6AavZUgrIhN0Zvtp5OHiAkTTTXFjGoZsG2OgbmuSza8oniwXzg4nbGnJ+iwfunXe9BVCOuTc4198RhynKh+yoqRaJPiIv59neHPU/Ihy1ygjcvWfrOAQ8Wo7+BWH/iQXm7LBsQeIW6XqrL5jMpUqInapJf2y0U8ugfNhmZ7P4kRQs5aiX92Sc/YIAfk6rW8o7iyzJ++iK62WOMwAbW0b1Ugt+7M8VzDxMtu0rs2mbU99BFwlHiX4SUPfIFM4N/yigPewuIT1+O01Kb7DphGJVxiFocN5aOB82w3Hl7OwV2hm/SQMX1/Jko/ghaO3pnw5GQGlyA+/zGvfI3EoJZ0/YYHUwjjzbhPyQfqW/nCQbwUXZuZtuO2So6da23AVmEZ7WyNIcviOxxHXQ02k/0FCsofIZKYb3viEvfzgZqaQtQn3ijEvyET1YuCtNowzlcF2HCATM2f1VFJBLX/3qqo1D7JcslNzMmB6l5FI2mefAOeFNJVZ0M5uN7nMRrBtAGmefCvCEgzzDEOugF6sXSnmIjcgQkJE67kpNsjl57wdSi0YPyt8/bSYQbv3zDsjlgGoAoNaIPulhJILr/gRhs/5G66OkkpIlzoTJNRG/In+YTEMY2St8rXvHKPoUVfNEBY707GT648WAY8lLQ2fssciOsAd1fdCZY9H+rQQtAzNwtU+7X0vWBx3SINquzzvtrtGLFtWsCm0vdKNzSa7Wri9e346HrMGCXgOxwCegP6KpfuLRszOjbjFAjtLmKQ=
+    configuration_id : 13684689138869200067
+    type : 1
+    generation_name : WD Office365.exe
+    version : {}
+    language : 1
+ elements :
+  identifier : 0x46fa7211008f77f4
+  elements :
+   -
+     name : FEN_DETAILS
+     identifier : 0x4717aba00041c213
+     internal_properties : CAAAAAgAAAAsKgQQr9RcD99ZLxRvu1GchOXDG62A1QeOt6SEQN89yyWdelj4CGhLrJ8Z568h2c85OQ==
+     physical_name : .\FEN_DETAILS.wdw
+     type : 2
+   -
+     name : FEN_EXEMPLE
+     identifier : 0x47178c6c0077ddbb
+     internal_properties : CAAAAAgAAAD3U9/D4F3V1uQiebmm2Ctff2J+VvrVyQOqoJ+BIR789MAMraDUbDC0xXhiXibaphriYg==
+     physical_name : .\FEN_EXEMPLE.wdw
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\Microsoft Graph\Microsoft Graph.wci
+ report_and_queries_enabled : false
+ data_directory : <RepDonneesCommun>
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAABm9bt+PLbng6hFT6QmDCy/wtfpoWDwcgKVPIy91mqaeu5WU6rYGdiBd5NhuR2iLphcfxfmL1TyC37GLDkKc41Ldmbk
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      
+      // Session Office 365
+      MaSession est une O365Session
+      
+      // Paramétrage global
+      // (voir : https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade )
+      MaSession.ClientID 			= ""										// Insérez ICI vos paramètres
+      MaSession.ClientSecret 		= ""
+      MaSession.Tenant 			= ""										// Insérez ici votre tenant (nom DNS ou GUID ou encore nommé "Répertoire actif/Domaine de l'éditeur" par Microsoft)
+      
+      // Attention : veillez bien à ce que l'URL de redirection configurée sur le site de Microsoft
+      // corresponde à http://localhost:9874 . Au besoin, ajoutez une "Plateforme Web" et spécifiez cette URL de redirection.
+      // (voir : https://docs.microsoft.com/fr-fr/azure/active-directory/develop/scenario-spa-app-registration#redirect-uri-msaljs-20-with-auth-code-flow )
+      MaSession.URLCallback		= "http://localhost:9874"
+      
+      // On accédera aux contacts uniquement
+      MaSession.Permission 		= ["https://outlook.office.com/Contacts.ReadWrite"]	// autre exemple : ["https://outlook.office.com/contacts.readwrite","https://outlook.office.com/mail.read"]
+      
+      si masession.ClientID = "" _ou_ masession.ClientSecret = ""_OU_ MaSession.Tenant dans ( "", "" ) ALORS	
+      	FinProgramme("Vous n'avez pas spécifié les paramètres de la session Office 365.", ...
+      			     "Obtenez vos identifiants en vous inscrivant sur https://apps.dev.microsoft.com")
+      FIN
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Exécutable Windows 32 bits
+     identifier : 0x46fa721200907832
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

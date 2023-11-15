@@ -1,0 +1,95 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : O365Session
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16fbc8391bf100f7
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      O365Session est une Classe
+      	prive
+      		un objet IMSGraphSession
+      
+      	public
+      		ClientID		est une chaine					// Identifiant de l'application
+      		ClientSecret	est une chaine					// Code secret de l'application		
+      		Permission		est un tableau de chaines		// Permissions demandées		
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1656137435596325111
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+      
+      	
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1656137435596390647
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  properties :
+   -
+     name : URLCallback
+     identifier : 0x17165ded08ea1df4
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIQUE URLCallback(Valeur est chaîne)
+         m_Svc.URLRedirection = Valeur
+        type : 2031616
+     template_refs : []
+   -
+     name : Tenant
+     identifier : 0x1023b441005aca7d
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         procédure publique Tenant() : chaîne
+         renvoyer m_sTenant
+        type : 1966080
+      -
+        internal_properties : CAAAAAgAAACJQDEVT6Hi15jEgSdA1MqVijx+TCNiivkHbCKoZDOXvzyBlW2quf/79Es8IVMm1c4DJ03Lxu9sf8JnC+ipfZvuYEw6MC/EYhD4Ofeq2n5xKIYrTra4BAIt4OkYwORK1Q/YhONX2dzwB2VfjDuef+WppFtpb1nUWcpRNtrjdisGBQ==
+        code : |1-
+         procédure publique Tenant( sValeur est une chaîne )
+         
+         	// Mémorise le nouveau tenant
+         	m_sTenant = sValeur
+         	
+         	si m_sTenant = "" ALORS
+         		m_sTenant = "common"
+         	FIN
+         		
+         	// Actualise les Urls
+         	m_Svc.URLAuth			= "https://login.microsoftonline.com/[%m_stenant%]/oauth2/v2.0/authorize"
+         	m_Svc.URLToken			= "https://login.microsoftonline.com/[%m_stenant%]/oauth2/v2.0/token"
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fc6683800045c49
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

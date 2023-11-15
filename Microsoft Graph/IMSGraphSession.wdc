@@ -1,0 +1,63 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IMSGraphSession
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16fa72db08038b1f
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAzBSpR5Y6m5r/8v9qcZxhZG23s3ChtMxNHqpt4yAWPl5EUNkAbuFkN2DMTVHA+xS7/Cmqg0BQm6LpBpPmUXCrIYYW4zwmYPAygwr5Iqm5kbl/tbFcex4oLzMyZMCvNY0h5iduV9teuenxej9Q=
+     code : |1-
+      IMSGraphSession est une Classe, abstraite
+      
+      	m_Svc				est un OAuth2Paramètres			// Service OAuth (Login)
+      	m_Session			est un AuthToken				// Session OAuth
+      	m_nEtat				est un entier					// Etat de la session
+      	m_sTenant			est une chaine					// Tenant
+      
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     internal_properties : CAAAAAgAAAAji6ZXxJdg6SsmA/j/g0QusVY3UdBPUgh/k7PpGpIMXmTTgA7XyH/LiuGgHBlGkCUoafCDFWf5zcP+geTSs0mKG8Ibc+iAZAh9T1rqQ7NRLNE/iS8DSoi5x4OfDKGTbas7oGrsUFy8za5kvwWpVp8Bk/EOFqN5YiUd4+aRVW6U
+     procedure_id : 1655762098069998367
+     type_code : 27
+     code : |1-
+      PROCEDURE protegee Constructeur()
+      
+      	m_sTenant					= "common"
+      
+      	m_Svc.URLAuth 				= "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      	m_Svc.URLToken 				= "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+      	m_Svc.TypeRéponse			= oauth2TypeRéponseCode
+      	
+      	// Etat initial
+      	m_nEtat = fbSessionFermée
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1655762098070063903
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fc66838000c5c78
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
